@@ -1,30 +1,51 @@
-# Responsive Portfolio Website Bianca
+# Weslen Py — Portfolio
 
-This project is part of a step-by-step YouTube tutorial in which we build a responsive portfolio website Bianca from scratch using HTML, CSS and JavaScript.
+Personal portfolio site for **Weslen Py**, Backend Developer specialized in Python, Go and TypeScript. Static site, no build step, no framework — plain HTML/CSS/JS.
 
-## 🎬 [Watch the Demo & Code](https://youtu.be/JSFIGIA9Zrk) 
+🔗 Sections: Home · About · Selected Work · Services · Skills · Contact
 
-![preview img](/preview.png) 
+## Features
 
-## 📌 Project Features
-- Fully responsive portfolio website Bianca (Mobile First Methodology).
-- Clear and semantic HTML structure.
-- Use of CSS variables and modern JavaScript functions.
-- Smooth scrolling between sections.
-- Scroll animations.
-- Compatible with all modern browsers and devices.
+- Fully responsive, dark purple theme with CSS custom properties for easy re-theming (`--hue` in `assets/css/styles.css`).
+- Home hero with a fake terminal window and a typed-text effect (Typed.js).
+- **Selected Work** — infinite auto-scrolling marquee of real projects, pauses on hover, cards grow/elevate on hover.
+- **Services** — accordion list.
+- **Skills** — categorized icon grid (via [skillicons.dev](https://skillicons.dev), with a manual icon fallback for logos that render blank on that service).
+- **Contact** — typographic call-to-action instead of boxed cards.
+- Easter egg: click the Python skill card.
+- Scroll-triggered reveal animations (ScrollReveal), active nav-link highlighting, mobile menu, scroll-to-top button.
 
-## 📦 Download the resources directly
-1. Click the green **code** button.
-2. Click **Download ZIP**.
-3. Extract the ZIP file and open the project in your code editor.
+## Stack
 
-## 📥 Clone or Fork the repository
-You can **clone** the repository to your local machine or **fork** it in your GitHub account to get all the project's resources.
+- HTML5 / CSS3 (custom properties, Grid, Flexbox) / vanilla JavaScript — no build tooling required.
+- [Remix Icon](https://remixicon.com/), [Typed.js](https://github.com/mattboldt/typed.js/), [ScrollReveal](https://scrollrevealjs.org/) via CDN.
+- [skillicons.dev](https://skillicons.dev) for technology badges in the Skills section.
+
+## Run locally
+
+No build step — serve the folder statically and open it:
 
 ```bash
-# Clone the repository using HTTPS
-git clone https://github.com/bedimcode/responsive-porfolio-website-Bianca.git
+# Python
+python -m http.server 8000
+
+# Node
+npx serve .
 ```
 
-Designed & developed with ❤️ by **[Bedimcode](https://www.youtube.com/@Bedimcode)** 
+Then open `http://localhost:8000`. Opening `index.html` directly in a browser also works, since there's no bundler involved.
+
+## Project structure
+
+```text
+index.html
+assets/
+  css/styles.css
+  js/main.js
+  img/            # favicon, decorative images
+robots.txt
+```
+
+## Credits
+
+Originally scaffolded from the **Bianca** template by [Bedimcode](https://www.youtube.com/@Bedimcode) ([original tutorial repo](https://github.com/bedimcode/responsive-porfolio-website-Bianca)). Content, design system, and most section layouts (Work marquee, Services accordion, Skills grid, Contact) have since been rewritten.
