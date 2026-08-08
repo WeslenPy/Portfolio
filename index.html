@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Weslen Py — Backend Developer specialized in Python, Go and TypeScript. Building scalable APIs, event-driven systems and cloud infrastructure.">
+      <meta name="robots" content="index, follow">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS - Insert link for icons ===============-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Weslen Py | Backend Developer</title>
+   </head>
+   <body>
+      <!--==================== HEADER & NAV ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="/index.html" class="nav__logo">Weslen<span>.</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li>
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+
+                  <li>
+                     <a href="#work" class="nav__link">Works</a>
+                  </li>
+
+                  <li>
+                     <a href="#service" class="nav__link">My Services</a>
+                  </li>
+
+                  <li>
+                     <a href="#skills" class="nav__link">Skills</a>
+                  </li>
+
+                  <li>
+                     <a href="#contact" class="nav__contact">Contact me</a>
+                  </li>
+               </ul>
+
+               <!-- Close -->
+               <button class="nav__close" id="nav-close" aria-label="Close menu">
+                  <i class="ri-close-large-line"></i>
+               </button>
+            </div>
+
+            <!-- Toggle -->
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+               <i class="ri-menu-line"></i>
+            </button>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME SECTION ====================-->
+         <section class="home section" id="home">
+            <div class="blob-big home__blob-1"></div>
+            <div class="blob-small home__blob-2"></div>
+
+            <div class="home__container container grid">
+               <div class="home__data">
+                  <span class="home__subtitle">Hi, I'm Weslen</span>
+                  <h1 class="home__title">
+                     Backend Developer &amp;<br>
+                     API Architect
+                  </h1>
+                  <p class="home__description">
+                     I design and build scalable APIs, event-driven services and cloud
+                     infrastructure with <span>Python</span>, <span>Go</span> and
+                     <span>TypeScript</span> — from WhatsApp gateways to payment-integrated
+                     platforms.
+                  </p>
+
+                  <div class="home__buttons">
+                     <a href="#work" class="button">
+                        View my work <i class="ri-arrow-right-line"></i>
+                     </a>
+                     <a href="#contact" class="button button--ghost">
+                        Contact me
+                     </a>
+                  </div>
+
+                  <div class="home__social">
+                     <a href="https://github.com/WeslenPy" target="_blank" rel="noopener noreferrer" class="home__social-link" aria-label="GitHub">
+                        <i class="ri-github-fill"></i>
+                     </a>
+                     <a href="mailto:weslenjhony@gmail.com" class="home__social-link" aria-label="Email">
+                        <i class="ri-mail-fill"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="home__terminal">
+                  <div class="home__terminal-header">
+                     <span class="home__terminal-dot home__terminal-dot--red"></span>
+                     <span class="home__terminal-dot home__terminal-dot--yellow"></span>
+                     <span class="home__terminal-dot home__terminal-dot--green"></span>
+                     <span class="home__terminal-title">weslen@server: ~</span>
+                  </div>
+                  <div class="home__terminal-body">
+                     <p><span class="home__terminal-prompt">$</span> whoami</p>
+                     <p class="home__terminal-output">weslen_backend_dev</p>
+                     <p><span class="home__terminal-prompt">$</span> cat stack.txt</p>
+                     <p class="home__terminal-output">Python · FastAPI · Go · NestJS · Docker · AWS</p>
+                     <p>
+                        <span class="home__terminal-prompt">$</span>
+                        <span id="home-typed"></span><span class="home__terminal-cursor">&nbsp;</span>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT SECTION ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__data">
+                  <h2 class="section__title">About <span>Me</span></h2>
+                  <p class="about__description">
+                     I'm a backend-focused developer who builds systems that run
+                     unattended and stay up: async APIs, message-queue-driven workers,
+                     scheduled jobs and the infrastructure around them. Most of my recent
+                     work has been on WhatsApp integration platforms, SMS/number sales
+                     panels and proxy gateways — services that talk to flaky external
+                     providers and still need to be reliable, observable and easy to
+                     scale horizontally.
+                  </p>
+                  <p class="about__description">
+                     Day to day that means FastAPI and Flask on the Python side, Go for
+                     lean network-facing services, and NestJS when a project calls for
+                     TypeScript — wired together with RabbitMQ/SQS, Redis pub/sub,
+                     Docker and, where it matters, OpenTelemetry + Grafana so I can see
+                     what the system is actually doing in production.
+                  </p>
+
+                  <div class="about__info grid">
+                     <div class="about__info-card">
+                        <i class="ri-code-s-slash-line about__info-icon"></i>
+                        <h3>APIs &amp; Integrations</h3>
+                        <span>REST APIs, auth, payment &amp; messaging providers</span>
+                     </div>
+                     <div class="about__info-card">
+                        <i class="ri-stack-line about__info-icon"></i>
+                        <h3>Async &amp; Queues</h3>
+                        <span>RabbitMQ, SQS, workers, scheduled jobs</span>
+                     </div>
+                     <div class="about__info-card">
+                        <i class="ri-cloud-line about__info-icon"></i>
+                        <h3>Cloud &amp; DevOps</h3>
+                        <span>Docker, AWS, observability, CI/CD</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== WORK SECTION ====================-->
+         <section class="work section" id="work">
+            <h2 class="section__title">Selected <span>Work</span></h2>
+
+            <div class="work__container container">
+               <div class="work__marquee" id="work-marquee">
+                  <div class="work__track" id="work-track">
+
+                     <div class="work__card">
+                        <div class="work__card-icon"><i class="ri-telegram-2-fill"></i></div>
+                        <h3 class="work__card-title">Bot</h3>
+                        <span class="work__card-subtitle">Messaging Bot Backend</span>
+                        <p class="work__card-description">
+                           Flask API powering a Telegram/QR-pairing bot: JWT auth, Redis
+                           caching, MySQL via SQLAlchemy, and cron-driven jobs, packaged
+                           with Docker and deployed to AWS.
+                        </p>
+                        <ul class="work__card-tags">
+                           <li>Python</li>
+                           <li>Flask</li>
+                           <li>Redis</li>
+                           <li>MySQL</li>
+                           <li>AWS</li>
+                        </ul>
+                     </div>
+
+                     <div class="work__card">
+                        <div class="work__card-icon"><i class="ri-layout-grid-line"></i></div>
+                        <h3 class="work__card-title">Bot Dashboard</h3>
+                        <span class="work__card-subtitle">Bot Admin Dashboard</span>
+                        <p class="work__card-description">
+                           Operator-facing dashboard for the Bot backend, built with
+                           React Router 7 and TypeScript: tables, calendars and
+                           finance/product screens on top of Tailwind and shadcn/ui.
+                        </p>
+                        <ul class="work__card-tags">
+                           <li>TypeScript</li>
+                           <li>React</li>
+                           <li>Tailwind</li>
+                           <li>shadcn/ui</li>
+                        </ul>
+                     </div>
+
+                     <div class="work__card">
+                        <div class="work__card-icon"><i class="ri-whatsapp-line"></i></div>
+                        <h3 class="work__card-title">WAConnect</h3>
+                        <span class="work__card-subtitle">WhatsApp Gateway API</span>
+                        <p class="work__card-description">
+                           FastAPI service for managing WhatsApp accounts end to end:
+                           messaging campaigns, number warm-up, unban flows and JWT auth,
+                           with async workers on RabbitMQ, real-time notifications over
+                           Redis pub/sub and scheduled jobs on Airflow.
+                        </p>
+                        <ul class="work__card-tags">
+                           <li>Python</li>
+                           <li>FastAPI</li>
+                           <li>RabbitMQ</li>
+                           <li>Redis</li>
+                           <li>Docker</li>
+                        </ul>
+                     </div>
+
+                     <div class="work__card">
+                        <div class="work__card-icon"><i class="ri-router-line"></i></div>
+                        <h3 class="work__card-title">ProxyManager</h3>
+                        <span class="work__card-subtitle">Proxy Device Fleet Manager</span>
+                        <p class="work__card-description">
+                           FastAPI + async SQLAlchemy backend orchestrating a fleet of
+                           proxy devices over frps/frpc tunnels: IP rotation, RBAC/ReBAC
+                           auth and real-time WebSocket presence with a Redis pub/sub
+                           and webhook fallback.
+                        </p>
+                        <ul class="work__card-tags">
+                           <li>Python</li>
+                           <li>FastAPI</li>
+                           <li>PostgreSQL</li>
+                           <li>WebSocket</li>
+                        </ul>
+                     </div>
+
+                     <div class="work__card">
+                        <div class="work__card-icon"><i class="ri-smartphone-line"></i></div>
+                        <h3 class="work__card-title">Painel-Sms</h3>
+                        <span class="work__card-subtitle">SMS Number Sales Panel</span>
+                        <p class="work__card-description">
+                           Panel for purchasing SMS-verification numbers, with JWT-based
+                           auth, Coinbase Commerce payments and AWS resources managed via
+                           boto3 — built on Flask and SQLAlchemy.
+                        </p>
+                        <ul class="work__card-tags">
+                           <li>Python</li>
+                           <li>Flask</li>
+                           <li>SQLAlchemy</li>
+                           <li>AWS</li>
+                        </ul>
+                     </div>
+
+                     <div class="work__card">
+                        <div class="work__card-icon"><i class="ri-bar-chart-grouped-line"></i></div>
+                        <h3 class="work__card-title">WADashboard</h3>
+                        <span class="work__card-subtitle">WhatsApp Ops Dashboard</span>
+                        <p class="work__card-description">
+                           React Router 7 + TypeScript dashboard for managing WhatsApp
+                           operations: unban/maturation flows, campaigns, multi-tenant
+                           client/admin roles and real-time updates over WebSocket.
+                        </p>
+                        <ul class="work__card-tags">
+                           <li>TypeScript</li>
+                           <li>React</li>
+                           <li>WebSocket</li>
+                           <li>Tailwind</li>
+                        </ul>
+                     </div>
+
+                     <div class="work__card">
+                        <div class="work__card-icon"><i class="ri-store-2-line"></i></div>
+                        <h3 class="work__card-title">Atlas</h3>
+                        <span class="work__card-subtitle">Desktop POS (PDV)</span>
+                        <p class="work__card-description">
+                           Point-of-sale desktop app built with Tauri and React: local
+                           SQLite via Drizzle ORM, fiscal receipt signing, QR codes and
+                           integration with Intelbras hardware.
+                        </p>
+                        <ul class="work__card-tags">
+                           <li>TypeScript</li>
+                           <li>React</li>
+                           <li>Tauri</li>
+                           <li>SQLite</li>
+                        </ul>
+                     </div>
+
+                     <div class="work__card">
+                        <div class="work__card-icon"><i class="ri-play-circle-line"></i></div>
+                        <h3 class="work__card-title">AnimeFlex</h3>
+                        <span class="work__card-subtitle">Anime Streaming App</span>
+                        <p class="work__card-description">
+                           React Native/Expo app for watching anime: offline downloads,
+                           local SQLite via Drizzle, background fetch and a
+                           favorites/watching-list experience.
+                        </p>
+                        <ul class="work__card-tags">
+                           <li>TypeScript</li>
+                           <li>React Native</li>
+                           <li>Expo</li>
+                           <li>SQLite</li>
+                        </ul>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES SECTION ====================-->
+         <section class="services section" id="service">
+            <h2 class="section__title">My <span>Services</span></h2>
+
+            <div class="services__container container">
+
+               <div class="services__card">
+                  <div class="services__card-header">
+                     <div class="services__card-title">
+                        <i class="ri-code-s-slash-line services__card-icon"></i>
+                        <h3>API Development &amp; Integration</h3>
+                     </div>
+                     <i class="ri-arrow-down-s-line services__card-arrow"></i>
+                  </div>
+                  <div class="services__card-description">
+                     <p>
+                        Design and implementation of REST APIs with FastAPI, Flask or
+                        NestJS: authentication, rate limiting, and integrations with
+                        payment gateways and messaging platforms.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="services__card">
+                  <div class="services__card-header">
+                     <div class="services__card-title">
+                        <i class="ri-stack-line services__card-icon"></i>
+                        <h3>Distributed Systems &amp; Async Processing</h3>
+                     </div>
+                     <i class="ri-arrow-down-s-line services__card-arrow"></i>
+                  </div>
+                  <div class="services__card-description">
+                     <p>
+                        Event-driven architectures with RabbitMQ or SQS, background
+                        workers, Redis pub/sub and scheduled jobs with Airflow for
+                        workloads that need to scale independently.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="services__card">
+                  <div class="services__card-header">
+                     <div class="services__card-title">
+                        <i class="ri-cloud-line services__card-icon"></i>
+                        <h3>Cloud &amp; DevOps</h3>
+                     </div>
+                     <i class="ri-arrow-down-s-line services__card-arrow"></i>
+                  </div>
+                  <div class="services__card-description">
+                     <p>
+                        Containerization with Docker, AWS infrastructure, and
+                        observability with OpenTelemetry and Grafana so production
+                        systems stay debuggable, not just running.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="services__card">
+                  <div class="services__card-header">
+                     <div class="services__card-title">
+                        <i class="ri-robot-2-line services__card-icon"></i>
+                        <h3>Automation &amp; Bots</h3>
+                     </div>
+                     <i class="ri-arrow-down-s-line services__card-arrow"></i>
+                  </div>
+                  <div class="services__card-description">
+                     <p>
+                        WhatsApp and messaging-platform automation, proxy/gateway
+                        tooling, and workflow automation for repetitive operational
+                        tasks.
+                     </p>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+
+         <!--==================== SKILLS SECTION ====================-->
+         <section class="skills section" id="skills">
+            <h2 class="section__title">My <span>Skills</span></h2>
+
+            <div class="skills__container container">
+
+               <div class="skills__group">
+                  <h3 class="skills__group-title">Languages &amp; Frameworks</h3>
+                  <div class="skills__grid grid">
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=py" alt="Python" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Python</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=fastapi" alt="FastAPI" class="skills__icon" loading="lazy">
+                        <span class="skills__name">FastAPI</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=flask" alt="Flask" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Flask</span>
+                     </div>
+                     <div class="skills__card">
+                        <div class="skills__icon-box skills__icon-box--sqlalchemy"><i class="ri-links-line"></i></div>
+                        <span class="skills__name">SQLAlchemy</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=go" alt="Go" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Go</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" class="skills__icon" loading="lazy">
+                        <span class="skills__name">JavaScript</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript" class="skills__icon" loading="lazy">
+                        <span class="skills__name">TypeScript</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=react" alt="React" class="skills__icon" loading="lazy">
+                        <span class="skills__name">React</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS" class="skills__icon" loading="lazy">
+                        <span class="skills__name">NestJS</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Tailwind</span>
+                     </div>
+                     <div class="skills__card">
+                        <div class="skills__icon-box skills__icon-box--dark"><i class="ri-terminal-window-line"></i></div>
+                        <span class="skills__name">shadcn/ui</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=tauri" alt="Tauri" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Tauri</span>
+                     </div>
+                     <div class="skills__card">
+                        <div class="skills__icon-box skills__icon-box--sqlalchemy"><i class="ri-links-line"></i></div>
+                        <span class="skills__name">Expo</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Node.js</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Bootstrap</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=graphql" alt="GraphQL" class="skills__icon" loading="lazy">
+                        <span class="skills__name">GraphQL</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=qt" alt="Qt" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Qt</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="skills__group">
+                  <h3 class="skills__group-title">Infra &amp; Data</h3>
+                  <div class="skills__grid grid">
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=docker" alt="Docker" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Docker</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=aws" alt="AWS" class="skills__icon" loading="lazy">
+                        <span class="skills__name">AWS</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=nginx" alt="Nginx" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Nginx</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" class="skills__icon" loading="lazy">
+                        <span class="skills__name">MySQL</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=redis" alt="Redis" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Redis</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=rabbitmq" alt="RabbitMQ" class="skills__icon" loading="lazy">
+                        <span class="skills__name">RabbitMQ</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL" class="skills__icon" loading="lazy">
+                        <span class="skills__name">PostgreSQL</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=grafana" alt="Grafana" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Grafana</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite" class="skills__icon" loading="lazy">
+                        <span class="skills__name">SQLite</span>
+                     </div>
+                     <div class="skills__card">
+                        <div class="skills__icon-box skills__icon-box--drizzle"><i class="ri-database-2-fill"></i></div>
+                        <span class="skills__name">Drizzle</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="skills__group">
+                  <h3 class="skills__group-title">Tools</h3>
+                  <div class="skills__grid grid">
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=git" alt="Git" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Git</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=github" alt="GitHub" class="skills__icon" loading="lazy">
+                        <span class="skills__name">GitHub</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=linux" alt="Linux" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Linux</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" class="skills__icon" loading="lazy">
+                        <span class="skills__name">VS Code</span>
+                     </div>
+                     <div class="skills__card">
+                        <img src="https://skillicons.dev/icons?i=selenium" alt="Selenium" class="skills__icon" loading="lazy">
+                        <span class="skills__name">Selenium</span>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </section>
+
+         <!--==================== CONTACT SECTION ====================-->
+         <section class="contact section" id="contact">
+            <h2 class="section__title">Get In <span>Touch</span></h2>
+
+            <div class="blob-big contact__blob"></div>
+
+            <div class="contact__container container">
+              
+               <p class="contact__lead">
+                  Got a project that needs a backend, an integration that
+                  keeps breaking, or a system that needs to scale?
+               </p>
+
+               <a href="mailto:weslenjhony@gmail.com" class="contact__email">
+                  weslenjhony@gmail.com
+                  <i class="ri-arrow-right-up-line"></i>
+               </a>
+
+               <a href="https://github.com/WeslenPy" target="_blank" rel="noopener noreferrer" class="contact__github">
+                  <i class="ri-github-fill"></i>
+                  github.com/WeslenPy
+               </a>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container">
+            <a href="#home" class="footer__logo">Weslen<span>.</span></a>
+
+            <ul class="footer__list">
+               <li><a href="#work" class="footer__link">Works</a></li>
+               <li><a href="#service" class="footer__link">Services</a></li>
+               <li><a href="#skills" class="footer__link">Skills</a></li>
+               <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+
+            <div class="footer__social">
+               <a href="https://github.com/WeslenPy" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+                  <i class="ri-github-fill"></i>
+               </a>
+               <a href="mailto:weslenjhony@gmail.com" class="footer__social-link" aria-label="Email">
+                  <i class="ri-mail-fill"></i>
+               </a>
+            </div>
+
+            <span class="footer__copy">&#169; 2026 Weslen Py. All rights reserved.</span>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL - Insert link for animations ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+      <!--=============== TYPED JS - Insert link for text animations ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
